@@ -1,5 +1,6 @@
 package de.bikes.sammlungen;
 
+import de.bikes.pojos.GanzzahlListe;
 import de.bikes.pojos.Obst;
 import de.bikes.pojos.ObstListe;
 import de.bikes.pojos.StringListe;
@@ -33,8 +34,15 @@ public class EinsteigInListen {
 
 
         List nurNamen = new StringListe();
-        nurNamen.add("Apfel");
+        nurNamen.add("Justos Junas");
         Obst apfel = new Obst("Apfel");
-        nurNamen.add(apfel);
+        //nurNamen.add(apfel);
+
+        List nurGanzZahlen = new GanzzahlListe();
+        nurGanzZahlen.add(17);
+       // nurGanzZahlen.add("Justus");
+
+        //List nurJButtons = new JButtonListe();
+
     }
 }
