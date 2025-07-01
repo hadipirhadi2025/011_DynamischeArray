@@ -2,6 +2,7 @@ package de.bikes.sammlungen;
 
 import de.bikes.pojos.Obst;
 import de.bikes.pojos.ObstListe;
+import de.bikes.pojos.StringListe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +32,9 @@ public class EinsteigInListen {
         System.out.println();
 
 
-
+        List nurNamen = new StringListe();
+        nurNamen.add("Apfel");
+        Obst apfel = new Obst("Apfel");
+        nurNamen.add(apfel);
     }
 }
