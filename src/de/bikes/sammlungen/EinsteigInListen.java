@@ -1,10 +1,8 @@
 package de.bikes.sammlungen;
 
-import de.bikes.pojos.GanzzahlListe;
-import de.bikes.pojos.Obst;
-import de.bikes.pojos.ObstListe;
-import de.bikes.pojos.StringListe;
+import de.bikes.pojos.*;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +40,9 @@ public class EinsteigInListen {
         nurGanzZahlen.add(17);
        // nurGanzZahlen.add("Justus");
 
-        //List nurJButtons = new JButtonListe();
+        List nurJButtons = new JButtonListe();
+        nurJButtons.add(new JButton());
+//        nurJButtons.add("Ein Name");
 
     }
 }
