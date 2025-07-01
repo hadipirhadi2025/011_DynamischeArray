@@ -14,7 +14,8 @@ import java.util.List;
 public class EinsteigInListen {
     public static void main(String[] args) {
         List obst = new ObstListe();
-        obst.add("Apfel");
+        //eception !!!!
+        //obst.add("Apfel");
         obst.add(new Obst("Banane"));
         obst.add(new Obst("Kiwi"));
         System.out.println(obst);
