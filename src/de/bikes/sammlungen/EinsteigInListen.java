@@ -1,6 +1,7 @@
 package de.bikes.sammlungen;
 
 import de.bikes.pojos.Obst;
+import de.bikes.pojos.ObstListe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public class EinsteigInListen {
     public static void main(String[] args) {
-        List obst = new ArrayList();
+        List obst = new ObstListe();
         obst.add("Apfel");
         obst.add(new Obst("Banane"));
         obst.add(new Obst("Kiwi"));
