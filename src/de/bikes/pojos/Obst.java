@@ -1,6 +1,8 @@
 package de.bikes.pojos;
 
-public class Obst{
+import java.util.Objects;
+
+public class Obst {
     private String name;
     private String herkunftsLand;
 
@@ -9,21 +11,21 @@ public class Obst{
         herkunftsLand = "Irgendwo auf der Erde";
     }
 
-    public Obst(String herkunftsLand, String name) {
-        this.herkunftsLand = herkunftsLand;
+    public Obst(String name, String herkunftsLand) {
         this.name = name;
+        this.herkunftsLand = herkunftsLand;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getHerkunftsLand() {
         return herkunftsLand;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setHerkunftsLand(String herkunftsLand) {
@@ -35,13 +37,13 @@ public class Obst{
         if (o == null || getClass() != o.getClass()) return false;
 
         Obst obst = (Obst) o;
-        return name.equals(obst.name) && herkunftsLand.equals(obst.herkunftsLand);
+        return Objects.equals(name, obst.name) && Objects.equals(herkunftsLand, obst.herkunftsLand);
     }
 
     @Override
     public int hashCode() {
-        int result = name.hashCode();
-        result = 31 * result + herkunftsLand.hashCode();
+        int result = Objects.hashCode(name);
+        result = 31 * result + Objects.hashCode(herkunftsLand);
         return result;
     }
 
